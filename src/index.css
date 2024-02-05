@@ -1,13 +1,99 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  margin-top: 100px;
+}
+
+.app-container {
+  display: flex;
+  width: 900px;
+  height: 400px;
+  background-color: yellow;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.column {
+  width: 50%;
+}
+
+.column-left {
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.column-right {
+  padding-right: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.logo__name {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo__image {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.pokemon-container {
+  width: 375px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  background-color: antiquewhite;
+}
+
+.pokemon-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 160px;
+  height: 70px;
+  border-radius: 8px;
+  background-color: rgb(127, 219, 255);
+  padding: 0px 10px;
+}
+
+.pokemon-item:nth-child(odd) {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.pokemon-item:nth-child(5) {
+  margin-bottom: 0;
+}
+
+.pokemon-item__image {
+  width: 20%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.pokemon-item__name {
+  margin: 0;
+}
+
+.title {
+  text-align: center;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 90px;
+}
+
+li {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
